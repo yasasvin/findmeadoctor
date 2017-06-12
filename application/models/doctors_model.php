@@ -109,7 +109,7 @@ class Doctors_model extends CI_Model {
 					'email' => $_POST['email'],
 					'contactno' => $_POST['contactno'],
 					'gender' => $_POST['gender'],
-					'location' => '',
+					'location' => $_POST['location'],
 					'status' => $_POST['status']
 				)
 			);
@@ -157,7 +157,7 @@ class Doctors_model extends CI_Model {
 				'email' => $_POST['email'],
 				'contactno' => $_POST['contactno'],
 				'gender' => $_POST['gender'],
-				'location' => '',
+				'location' => $_POST['location'],
 				'status' => $_POST['status']
 			)
 		);

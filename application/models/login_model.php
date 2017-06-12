@@ -30,6 +30,7 @@ class Login_model extends CI_Model {
 
 		$this->session->set_userdata(
 			array(
+				'id' => $user_data['user_id'],
 				'status' => true,
 				'username' => $user_data['username'],
 				'first_name' => $user_data['first_name'],

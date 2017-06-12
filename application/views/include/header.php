@@ -23,7 +23,8 @@
 	<!-- boxed bg -->
 	<link id="bodybg" href="<?php echo base_url('css/bodybg/bg1.css');?>" rel="stylesheet" type="text/css" />
 	<!-- template skin -->
-	<link id="t-colors" href="<?php echo base_url('css/color/default.css');?>" rel="stylesheet">
+	<link id="t-colors" href="<?php echo base_url('css/color/default.css');?>" rel="stylesheet"/>
+	<script src="<?php echo base_url('js/jquery.min.js');?>"></script>
     
     <!-- =======================================================
         Theme Name: Medicio
@@ -45,7 +46,7 @@
 					<p class="bold text-left"><?php echo date('l jS F Y');?></p>
 					</div>
 					<div class="col-sm-6 col-md-6">
-					<p class="bold text-right">Call us now +64 800 001 001</p>
+					<p class="bold text-right">Call us now +64 008 65 001</p>
 					</div>
 				</div>
 			</div>
@@ -65,20 +66,20 @@
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 			  <ul class="nav navbar-nav">
 				<li class="active"><a href="<?php echo site_url();?>">Home</a></li>
-				<li><a href="#symptom_checker">Symptom Checker</a></li>
-				<li><a href="#doctor">Doctors</a></li>
-				<li><a href="#facilities">Facilities</a></li>
+				<li><a href="<?php echo site_url('symptom_checker');?>">Symptom Checker</a></li>
+				<li><a href="<?php echo site_url('find_doctors');?>">Doctors</a></li>
+				<li><a href="<?php echo site_url('find_services');?>">Facilities</a></li>
 				<?php if($this->session->userdata('status') != 'true'):?>
 					<li><a href="<?php echo site_url('login');?>">Login</a></li>
 				<?php endif;?>
 				<li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo ($this->session->userdata('status') == 'true' ?  'Welcome ' . $this->session->userdata('first_name') . '!' : 'Logged in as Guest');?><b class="caret"></b></a>
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo ($this->session->userdata('status') == 'true' ?  'Welcome ' . $this->session->userdata('first_name') : 'Logged in as Guest');?><b class="caret"></b></a>
 					  <ul class="dropdown-menu">
 					  	<?php if($this->session->userdata('status') == 'true'):?>
 					  		<?php if($this->session->userdata('user_level') == 'admin'):?>
 					  			<li><a href="<?php echo site_url('admin');?>">Admin Panel</a></li>
 					  		<?php endif;?>
-						    <li><a href="index.html">My Appointments</a></li>
+						    <li><a href="<?php echo site_url('appointments/my_appointments');?>">My Appointments</a></li>
 							<li><a href="<?php echo site_url('login/logout');?>">Log Out</a></li>
 						<?php else:?>
 							<li><a href="<?php echo site_url('register')?>">Register</a></li>

@@ -148,6 +148,13 @@
 	    													<input name="phone" id="phone" class="form-control input-md" type="text" required>
 	    												</div>
 	    											</div>
+
+	    											<div class="col-xs-6 col-sm-6 col-md-6">
+	    												<div class="form-group">
+	    													<label>Location</label>
+	    													<input id="location" name="location" class="form-control input-md" placeholder="Enter Your Address" onFocus="geolocate()" type="text"/>
+	    												</div>
+	    											</div>
 	    										</div>
 	    										
 	    										<input value="Submit" class="btn btn-skin btn-block btn-lg" type="submit">
@@ -165,3 +172,12 @@
 			</div>
 		</div>
     </section>
+   	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjip7rKC7sGMKzcpwnFMEo1qlYnIQiEbY&libraries=places"></script>
+    <script type="text/javascript">
+		var input = document.getElementById('location');
+		var options = {
+		  types: ['address']
+		};
+
+		autocomplete = new google.maps.places.Autocomplete(input, options);
+    </script>

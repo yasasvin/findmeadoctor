@@ -43,7 +43,7 @@ class Register_model extends CI_Model {
 				'first_name' => $_POST['first_name'],
 				'last_name' => $_POST['last_name'],
 				'dob' => $_POST['dob'],
-				'location' => NULL,
+				'location' => $_POST['location'],
 				'address_line1' => $_POST['address_line1'],
 				'address_line2' => $_POST['address_line2'],
 				'city' => $_POST['city'],

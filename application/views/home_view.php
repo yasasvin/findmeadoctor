@@ -29,9 +29,9 @@
 						<div class="wow fadeInRight" data-wow-delay="0.1s">
 
 						<ul class="lead-list">
-							<li><a><span class="fa fa-stethoscope fa-3x icon-info"></span> <span class="list"><strong>Symptom Checker</strong><br /> Find a specialist based on your symptoms.</span></a></li>
-							<li><a><span class="fa fa-user-md fa-3x icon-info"></span> <span class="list"><strong>Find a Doctor</strong><br />Make an appointment with a doctor.</span></a></li>
-							<li><a><span class="fa fa-hospital-o fa-3x icon-info"></span> <span class="list"><strong>Find other Medical Services</strong><br />Find other medical services based on your location.</span></a></li>
+							<li><a href="<?php echo site_url('symptom_checker');?>"><span class="fa fa-stethoscope fa-3x icon-info"></span> <span class="list"><strong>Symptom Checker</strong><br /> Find a specialist based on your symptoms.</span></a></li>
+							<li><a href="<?php echo site_url('find_doctors');?>"><span class="fa fa-user-md fa-3x icon-info"></span> <span class="list"><strong>Find a Doctor</strong><br />Make an appointment with a doctor.</span></a></li>
+							<li><a href="<?php echo site_url('find_services');?>"><span class="fa fa-hospital-o fa-3x icon-info"></span> <span class="list"><strong>Find other Medical Services</strong><br />Find other medical services based on your location.</span></a></li>
 							<li><a href="<?php echo site_url('register');?>"><span class="fa fa-pencil-square-o fa-3x icon-info"></span> <span class="list"><strong>Register Now</strong><br />Register yourself to access above services at no cost.</span></a></li>
 						</ul>
 						</div>

@@ -98,6 +98,12 @@
 													</select>
 												</div>
 											</div>
+											<div class="col-xs-6 col-sm-6 col-md-6">
+												<div class="form-group">
+													<label>Location</label>
+													<input id="location" name="location" class="form-control input-md" value="<?php echo set_value('location', $form_data['location']); ?>"  placeholder="Enter Address" onFocus="geolocate()" type="text"/>
+												</div>
+											</div>
 										</div>
 										<button class="btn btn-skin btn-block btn-lg" type="submit">Submit</button>
 										<button class="btn btn-warning btn-block btn-lg" type="button" onclick="$('#admin_form').find('input,select').val('');">Reset</button>
@@ -145,3 +151,12 @@
 			</div>
 		</div>
     </section>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjip7rKC7sGMKzcpwnFMEo1qlYnIQiEbY&libraries=places"></script>
+    <script type="text/javascript">
+		var input = document.getElementById('location');
+		var options = {
+		  types: ['address']
+		};
+
+		autocomplete = new google.maps.places.Autocomplete(input, options);
+    </script>

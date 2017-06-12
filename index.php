@@ -63,13 +63,6 @@
  * Different environments will require different levels of error reporting.
  * By default development will show errors but testing and live will hide them.
  */
--    $cf_home = getenv('HOME');
-+    $cf_home = getenv('PWD');
-+	if(!preg_match('/\/app$/', $cf_home))
-+	{
-+		$cf_home = $cf_home . '/app';
-+	}
-
 switch (ENVIRONMENT)
 {
 	case 'development':

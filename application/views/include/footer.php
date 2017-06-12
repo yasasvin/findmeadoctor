@@ -16,9 +16,9 @@
 						<h5>Quick Links</h5>
 						<ul>
 							<li><a href="#">Home</a></li>
-							<li><a href="#">Symptom Checker</a></li>
-							<li><a href="#">Doctors</a></li>
-							<li><a href="#">Facilities</a></li>
+							<li><a href="<?php echo site_url('symptom_checker');?>">Symptom Checker</a></li>
+							<li><a href="<?php echo site_url('find_doctors');?>">Doctors</a></li>
+							<li><a href="<?php echo site_url('find_services');?>">Facilities</a></li>
 						</ul>
 					</div>
 					</div>
@@ -93,8 +93,7 @@
 </div>
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
 
-	<!-- Core JavaScript Files -->
-    <script src="<?php echo base_url('js/jquery.min.js');?>"></script>	 
+	<!-- Core JavaScript Files -->	 
     <script src="<?php echo base_url('js/bootstrap.min.js');?>"></script>
     <script src="<?php echo base_url('js/jquery.easing.min.js');?>"></script>
 	<script src="<?php echo base_url('js/wow.min.js');?>"></script>

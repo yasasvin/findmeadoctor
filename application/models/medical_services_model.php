@@ -78,8 +78,9 @@ class Medical_services_model extends CI_Model {
 					'state' => $_POST['state'],
 					'postal_code' => $_POST['postal_code'],
 					'country' => $_POST['country'],
-					'location' => '',
-					'status' => $_POST['status']
+					'location' => $_POST['location'],
+					'status' => $_POST['status'],
+					'medical_service_type_id' => $_POST['medical_service_type_id']
 				)
 			);
 
@@ -97,8 +98,9 @@ class Medical_services_model extends CI_Model {
 				'state' => $_POST['state'],
 				'postal_code' => $_POST['postal_code'],
 				'country' => $_POST['country'],
-				'location' => '',
-				'status' => $_POST['status']
+				'location' => $_POST['location'],
+				'status' => $_POST['status'],
+				'medical_service_type_id' => $_POST['medical_service_type_id']
 			)
 		);
 
