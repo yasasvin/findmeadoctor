@@ -45,7 +45,7 @@
 					<p class="bold text-left"><?php echo date('l jS F Y');?></p>
 					</div>
 					<div class="col-sm-6 col-md-6">
-					<p class="bold text-right">Call us now +64 008 65 001</p>
+					<p class="bold text-right">Call us now +64 800 001 001</p>
 					</div>
 				</div>
 			</div>
