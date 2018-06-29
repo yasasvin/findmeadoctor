@@ -1,6 +1,6 @@
-Visit for running demo app https://healthhelp.000webhostapp.com/
+Visit  https://healthhelp.000webhostapp.com/ for running demo app
 
-This is find me a doctor web application. The porpose of this is to practice a new concept to find a nearby doctor according the symptoms user input.
+The porpose of this is to practice a new concept to find a nearby doctor according the symptoms user input.
 
 Front End – Medico Bootstrap Template
 o	Theme Name: Medicio
