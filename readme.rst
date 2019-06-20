@@ -1,4 +1,4 @@
-Visit  https://healthhelp.000webhostapp.com/ for running demo app
+Visit  http://healthhelp.000webhostapp.com/ for running demo app
 
 The purpose of this is to practice a new concept to find a nearby doctor according the symptoms user input.
 
